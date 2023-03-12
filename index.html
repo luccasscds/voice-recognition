@@ -4,12 +4,20 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="/lib/bootstrap/bootstrap.min.css">
+    <script src="/lib/bootstrap/bootstrap.bundle.min.js"></script>
+    
+    <title>Voice</title>
   </head>
   <body>
-    <div id="app">
-      <textarea id="textarea" rows="10" placeholder="Sua fala será exibida aqui"></textarea>
-      <button id="speak">Pode falar</button>
+    <div id="app" class="m-3">
+      <textarea id="textarea" rows="10" 
+        class="form-control mb-3"
+        placeholder="Sua fala será exibida aqui"
+      ></textarea>
+      <button id="speak" type="button" class="btn btn-primary">Pode falar</button>
     </div>
     <script type="module" src="/src/main.ts"></script>
   </body>

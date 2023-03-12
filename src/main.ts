@@ -11,4 +11,6 @@ button.on('click', function() {
 
 export function changeTextButton(listening: boolean) {
   button.text(listening ? 'Parar de falar' : 'Pode falar');
+  button.toggleClass('btn-primary');
+  button.toggleClass('btn-danger');
 };
