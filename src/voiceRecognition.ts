@@ -33,9 +33,12 @@ export function voiceRecognition() {
       textarea.val(results);
       console.log(results); // temp
       
-      if(results.includes('horas')) {
+      // rules to speak
+      if(results.toLowerCase().includes('que horas são?')) {
         speak(new Date().toLocaleTimeString());
-      }
+      } else if(results.toLowerCase().includes('hoje')) {
+        speak(new Date().toLocaleDateString());
+      };
     };
 
     newVoice.listening = listening;
