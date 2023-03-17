@@ -1,8 +1,12 @@
 {
-  "name": "voice",
+  "name": "voice-recognition",
   "private": true,
   "version": "0.0.1",
   "type": "module",
+  "author": {
+    "name": "Lucas Silva",
+    "url": "https://github.com/luccasscds"
+  },
   "scripts": {
     "start": "vite",
     "build": "tsc && vite build",

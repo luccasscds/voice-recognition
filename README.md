@@ -1,2 +1,7 @@
 # 🎙️ Voice
-Usando api do javascript para gravar a voz e reproduzir a mesma.
+Usando api do javascript para realizar comando de voz.
+
+## 🧰 Tecnologias
+* TypeScript
+* ViteJS
+* NodeJs
