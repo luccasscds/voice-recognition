@@ -9,8 +9,9 @@
   },
   "scripts": {
     "start": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "tsc && vite build && npm run format_file",
+    "preview": "vite preview",
+    "format_file": "tsc && sed -i 's/\"\\//\".\\//g' dist/index.html"
   },
   "devDependencies": {
     "@types/jquery": "^3.5.16",
