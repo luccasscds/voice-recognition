@@ -3,7 +3,7 @@ import { getBrowserVersion, voiceRecognition } from './voice/voiceRecognition';
 import { constants } from './constants';
 
 // title page
-$('h1.title').html(`
+$('.title').html(`
   ${constants.APP_NAME} <small class="h6 text-muted">V${constants.APP_VERSION}</small>
 `);
 
