@@ -2,7 +2,7 @@ import $ from 'jquery';
 import { changeTextButton } from '../main';
 import { speak } from '../speak/speak';
 
-const textarea = $('#textarea');
+const voiceResponse = $('#voiceResponse');
 let listening = false;
 
 export function voiceRecognition() {
@@ -30,7 +30,7 @@ export function voiceRecognition() {
   };
   newVoice.onresult = (res: any) => {
     const results = res.results[0][0].transcript as string;
-    textarea.val(results);
+    voiceResponse.text(results);
     console.log(results); // temp
     
     // rules to speak

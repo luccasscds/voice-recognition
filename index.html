@@ -15,10 +15,11 @@
     <div id="app" class="m-3">
       <h1 class="title text-center text-capitalize mb-4"></h1>
 
-      <textarea id="textarea" rows="10" 
-        class="form-control mb-3"
-        placeholder="Sua fala será exibida aqui"
-      ></textarea>
+      <div class="d-flex align-items-center alert alert-primary">
+        <img src="./public//images/robot.svg">
+        <p id="voiceResponse" class="mx-2 my-0">Sua fala será exibida aqui...</p>
+      </div>
+
       <button id="speak" type="button" class="btn btn-primary" title="Gravar por voz">
         <img id="iconButton" src="./images/mic_off.svg"/>
       </button>

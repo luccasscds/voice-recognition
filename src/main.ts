@@ -8,7 +8,6 @@ $('h1.title').html(`
 `);
 
 const button = $('#speak');
-const textarea = $('#textarea');
 
 if(getBrowserVersion()) {
   button.on('click', function() {
@@ -18,7 +17,6 @@ if(getBrowserVersion()) {
     recognition.listening ? recognition.stop() : recognition.start();
   });
 } else {
-  textarea.attr('disabled', 'true');
   button.attr('disabled', 'true');
 }
 
