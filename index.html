@@ -2,7 +2,7 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="./images/mic.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- bootstrap -->
@@ -10,15 +10,19 @@
     <script src="./lib/bootstrap/bootstrap.bundle.min.js"></script>
     
     <title>Voice</title>
-    <script type="module" crossorigin src="./assets/index-8da495c3.js"></script>
+    <script type="module" crossorigin src="./assets/index-84c39335.js"></script>
   </head>
   <body>
     <div id="app" class="m-3">
+      <h1 class="title text-center text-capitalize mb-4"></h1>
+
       <textarea id="textarea" rows="10" 
         class="form-control mb-3"
         placeholder="Sua fala será exibida aqui"
       ></textarea>
-      <button id="speak" type="button" class="btn btn-primary">Pode falar</button>
+      <button id="speak" type="button" class="btn btn-primary" title="Gravar por voz">
+        <img id="iconButton" src="./images/mic_off.svg"./>
+      </button>
     </div>
     
   </body>
