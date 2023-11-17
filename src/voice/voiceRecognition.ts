@@ -34,7 +34,7 @@ export function voiceRecognition() {
     console.log(results); // temp
     
     // rules to speak
-    if(results.toLowerCase().includes('que horas são?')) {
+    if(results.toLowerCase().includes('que horas são')) {
       speak(new Date().toLocaleTimeString());
     } else if(results.toLowerCase().includes('hoje')) {
       speak(new Date().toLocaleDateString());
